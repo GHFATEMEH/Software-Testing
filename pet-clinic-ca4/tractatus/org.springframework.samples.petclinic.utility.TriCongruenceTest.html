@@ -1,0 +1,55 @@
+<html lang="en">
+
+    <head>
+        <title>Tractatus Tests Report</title>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    </head>
+
+    <body>
+        <h1>Tractatus Test Report</h1>
+
+        <ul class="list-group">
+            <li class="list-group-item list-group-item-primary"><b>Clause Definitions</b></li>
+            <li class="list-group-item">a := t1arr[0] != t2arr[0]</li>
+            <li class="list-group-item">b := t1arr[1] != t2arr[1]</li>
+            <li class="list-group-item">c := t1arr[2] != t2arr[2]</li>
+            <li class="list-group-item">d := t1arr[0] &lt; 0</li>
+            <li class="list-group-item">e := t1arr[0] + t1arr[1] &lt; t1arr[2]</li>
+        </ul>
+
+        <table class="table">
+            <thead>
+            <tr>
+                <th> Coverage Type </th>
+                <th> Predicate </th>
+                <th> Attributes </th>
+                <th> Valuations </th>
+            </tr>
+            </thead>
+            <tbody>
+            
+            <tr>
+                <td>
+                    <span>CACC</span>
+                </td>
+                <td>
+                    <span>d + e</span>
+                </td>
+                <td>
+                    <ul>
+                        <li>Predicate Value: false</li>
+                        <li>Major Clause: e</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>d = false</li>
+                        <li>e = true</li>
+                    </ul>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
